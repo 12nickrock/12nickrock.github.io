@@ -107,7 +107,7 @@
                         <li><a href="#hero">HOME</a></li>
                         <li><a href="#content-container">MUSIC</a></li>
                         <li><a href="#video-container">VIDEO</a></li>
-                        <li><a href="#news">NEWS</a></li>
+                        <li><a href="#notes">NOTES</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -119,8 +119,9 @@
             <div class="row">
                 <div class="screen"></div>
                 <div class="col-md-12 hero-text-wrapper text-center">
-                    <p class="hero-sub-text">NEW ALBUM</p>
-                    <p class="hero-feature-text">BEYOND ME</p>
+                    <p class="hero-sub-text">NEW EP</p>
+                    <p class="hero-feature-text">GEMTONES</p>
+                    <p>Volume I</p>
                     <button id="hero-cta" class="hero-cta-btn">LISTEN NOW</button>
                 </div>
             </div>
@@ -139,11 +140,11 @@
             <div class="music-row row">
                 <div class="col-md-12 text-center">
                     <div class="album-cover-wrapper center-block text-center">
-                        <a href="https://itun.es/us/PSkQdb" target="_blank"><img class="ep-cover img center-block img-responsive" src="assets/beyond-me-EP.jpg" alt="Beyond-Me EP"></a>
+                        <a href="https://itun.es/us/PSkQdb" target="_blank"><img class="ep-cover img center-block img-responsive" src="assets/gemtones.jpg" alt="Beyond-Me EP"></a>
                         <p class="cta-btn-ep" style="cursor: default; font-size: 1.2rem; letter-spacing: 0.2rem">Available Now</p>
-                        <a class="cta-btn-ep" target="_blank" href="https://itunes.apple.com/us/album/beyond-me-ep/id1135127337"><i class="fa fa-apple"></i> iTunes</a>
-                        <a class="cta-btn-ep" target="_blank" href="https://itun.es/us/PSkQdb"><i class="fa fa-apple"></i> Music</a>
-                        <a class="cta-btn-ep" target="_blank" href="https://open.spotify.com/album/47bp8OFdyjEvO07Udbmx64"><i class="fa fa-spotify"></i> Spotify</a>
+                        <a class="cta-btn-ep" target="_blank" href="https://itunes.apple.com/us/album/gemtones-vol-i-single/1361885956"><i class="fa fa-apple"></i> iTunes</a>
+                        <a class="cta-btn-ep" target="_blank" href="https://geo.itunes.apple.com/us/artist/nick-rock/1035428359?mt=1&app=music"><i class="fa fa-apple"></i> Music</a>
+                        <a class="cta-btn-ep" target="_blank" href="https://open.spotify.com/album/4q4L9tEYMo9PLVRSuxwbd9"><i class="fa fa-spotify"></i> Spotify</a>
                     </div>
                 </div>
             </div>
@@ -168,9 +169,12 @@
                 </div>
             </div>
             <div class="news-row row">
-                <div id="news" class="text-center col-md-12">
+                <div id="notes" class="text-center col-md-12">
                     <div class="news-wrapper center-block">
                         <blockquote cite="http://example.com/facts">
+                            <p>New journey of GEMTONES...<br>
+                            Before anything else, I want to thank everyone who has been on this journey with me since day one. It has been wild, but I feel so blessed to be able to create a soundtrack out of moments in life. After my last release in 2016, Beyond Me, I felt the urge to embark on a new journey to define myself as an artist more distinctly. I wanted the sounds and the stories to be raw and ravishing. I wanted to write songs that express the different tones of my autonomy. My intention was&mdash;the more I open up, the more everyone will connect to the music. The upcoming volumes of GEMTONES are very specific, whether it be a storyline, a style, or a combination of both, I'm being very precise with my purpose and passion for each song. To start, Volume 1 speaks on a vulnerable experience with love, and the willingness to <em>fall</em> for love, by <em>falling</em> in love. The reward after the risk is discovering the beauty in that one kiss.<br>This my tone and these are my gems, Fire &amp; The Feel.<br>~~~</p>
+                            <br>
                             <p>Making this music has been such an introspective journey.<br>
                             The last two and a half years required me to explore elements of life, in order to learn and grow into exactly who I am today. Doing this made me go beyond my accustomed mindset and emotions to make sure this music was conveyed just right. This is one of the main reasons behind titling my album “Beyond Me”.<br>~~~</p>
                         </blockquote>
@@ -190,7 +194,7 @@
                 </div>
             </div>
             <div class="row">
-                <p class="copy">&copy; Nick Rock <script>
+                <p class="copy">&copy; Nick Rock Music <script>
     var d = new Date();
     var n = d.getFullYear();
     document.write(n);
@@ -235,7 +239,7 @@
                 }
             });
             $('#hero-cta').on('click', function() {
-                window.open("https://itunes.apple.com/us/album/beyond-me-ep/id1135127337","_blank");
+                window.open("https://itunes.apple.com/us/album/gemtones-vol-i-single/1361885956","_blank");
             });
             $('#vid-lhite').on('click', function() {
                 window.open("https://www.youtube.com/watch?v=y10mvBrtt44","_blank");
@@ -248,19 +252,6 @@
                 if (wScroll > 120) {
                     $('.backToTop').addClass('show-me');
                 }
-                // if(wScroll > ($('section.music').offset().top - ($(window).height() / 2.2))) {
-                //     setTimeout(function() {
-                //         $('section.music h6').addClass('show-me');
-                //     }, 50);
-                //     $('.album-details *').each(function(i){
-                //         setTimeout(function() {
-                //             $('.album-details *').eq(i).addClass('show-me');
-                //         }, 120 * (i+1));
-                //     });
-                //     setTimeout(function() {
-                //         $('.album-cover').addClass('show-me');
-                //     }, 1000);
-                // }
                 if(wScroll > ($('#content-container').offset().top - ($(window).height() / 2.2))) {
                     setTimeout(function() {
                         $('.news-wrapper').addClass('show-me');

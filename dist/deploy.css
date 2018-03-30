@@ -51,7 +51,33 @@ body {
   padding: 0;
   color: #eee;
   text-align: center;
-  display: block; }
+  display: block;
+  background: linear-gradient(188deg, #ed3434, #0a1036, #281d2b, black, #542122);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 14s ease-in infinite;
+-moz-animation: AnimationName 14s ease-in infinite;
+animation: AnimationName 14s ease-in infinite;
+opacity: .87;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+
+}
+
   .screen.white-screen {
     background: rgba(255, 255, 255, 0.6); }
 
@@ -96,7 +122,7 @@ body {
   height: 500px; }
 
 #hero-img {
-  background: url("../assets/header/dist/header-3.jpg") center center no-repeat scroll;
+  background: url("../assets/header/dist/header.jpg") center center no-repeat scroll;
     background-size: cover;
   position: absolute;
   top: 0;
@@ -188,20 +214,20 @@ body {
     -webkit-transition: opacity 0.3s ease-in;
             transition: opacity 0.3s ease-in; }
     .album-cover-wrapper .ep-cover:hover {
-      opacity: 0.9; }
+      opacity: 1; }
   .album-cover-wrapper .cta-btn-ep {
     display: block;
     width: 100%;
     line-height: 1.1rem;
     letter-spacing: 0.1rem;
     color: #eee;
-    background: #222;
+    background: #281d2b;
     margin: 0px auto;
     padding: 15px;
     -webkit-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out; }
     .album-cover-wrapper .cta-btn-ep:hover {
-      background: #444;
+      background: #8d5c5b;
       text-decoration: none; }
 
 p.video-title {
@@ -346,7 +372,7 @@ p.video-title {
     max-width: 850px; } }
 @media only screen and (min-width: 992px) {
   .hero-text-wrapper {
-    padding: 148px 0; }
+    padding: 140px 0; }
     .hero-text-wrapper .hero-sub-text {
       letter-spacing: 0.6rem; }
     .hero-text-wrapper .hero-feature-text {
